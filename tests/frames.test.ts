@@ -11,6 +11,8 @@ test("handling frames test 1", async({page}) => {
     myframe?.fill("[placeholder='Enter email']", "Bho")
     const text1= await myframe?.locator("p.title has-text-info").textContent()
     console.log(text1);
+    console.log("====");
+    
     
    // expect(await myframe?.locator("p.title has-text-info").textContent())
     //.toContain("You have entered")
