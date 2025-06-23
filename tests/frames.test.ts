@@ -10,7 +10,7 @@ test("handling frames test 1", async({page}) => {
     page.waitForTimeout(4000)
     myframe?.fill("[placeholder='Enter email']", "Bho")
     const text1= await myframe?.locator("p.title has-text-info").textContent()
-    console.log(text1);
+   // console.log(text1);
     
    // expect(await myframe?.locator("p.title has-text-info").textContent())
     //.toContain("You have entered")
